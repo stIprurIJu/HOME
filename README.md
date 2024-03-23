@@ -1,0 +1,1 @@
+EdgeのCopilotを使って、ざっと作ったHOME画面です。
