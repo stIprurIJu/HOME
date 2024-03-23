@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    font-family: PlemolJP35 Console Medium;
+}
+
+p {
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 50px;
+    /* アイコンの幅を調整 */
+    height: 50px;
+    /* アイコンの高さを調整 */
+    margin: 20px;
+    /* アイコン間の余白を設定 */
+}
+
+a img {
+    width: 180px;
+    height: auto;
+    transition: all 0.5s;
+    margin: 20px 20px;
+    padding: 20px 20px;
+}
+
+a:hover img {
+    transform: scale(1.3);
+}
