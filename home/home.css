@@ -1,47 +1,53 @@
 body {
-    background-color: black; /* ページの背景色を黒に設定 */
-    font-family: 'PlemolJP35 Console Medium', sans-serif; /* フォントを指定、代替フォントはsans-serif */
-    margin: 0; /* 外側の余白をなくす */
-    padding: 0; /* 内側の余白をなくす */
-    display: flex; /* フレックスボックスレイアウトを使用 */
-    flex-direction: column; /* 子要素を縦方向に配置 */
-    align-items: center; /* 子要素を水平方向の中央に配置 */
+    background-color: black;
+    font-family: 'PlemolJP35 Console Medium', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 中央揃えから左揃えに変更 */
 }
 
 body::-webkit-scrollbar {
-    display: none; /* Chrome、Safari、Edge用のスクロールバーを非表示にする */
+    display: none;
 }
 
 p#dateDisplay {
-    font-size: 20px; /* 日付表示のフォントサイズを20ピクセルに設定 */
-    color: white; /* 日付の文字色を白に設定 */
-    width: 100%; /* 日付表示の幅を親要素の100%に設定 */
-    margin: 20px 0; /* 上下に20ピクセルの余白を設定 */
-    padding-left: 20px; /* 左側に20ピクセルの内側余白を追加 */
-    text-align: left; /* テキストを左揃えに */
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
 }
 
 .icon-container {
-    display: flex; /* フレックスボックスレイアウトを使用 */
-    flex-direction: column; /* 子要素を縦方向に配置 */
-    align-items: center; /* 子要素を水平方向の中央に配置 */
-    width: 100%; /* コンテナの幅を親要素の100%に設定 */
-    gap: 50px; /* 子要素間に50ピクセルの間隔を設定 */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 中央揃えから左揃えに変更 */
+    width: 100%;
+    gap: 50px;
+    padding-left: 20px; /* 左側に余白を追加 */
 }
 
 .icon-row {
-    display: flex; /* フレックスボックスレイアウトを使用 */
-    justify-content: center; /* 子要素を水平方向の中央に配置 */
-    width: 100%; /* 行の幅を親要素の100%に設定 */
-    gap: 40px; /* アイコン間に40ピクセルの間隔を設定 */
+    display: flex;
+    justify-content: flex-start; /* 中央揃えから左揃えに変更 */
+    width: 100%;
+    gap: 40px;
 }
 
 a img {
-    width: 160px; /* アイコンの幅を160ピクセルに設定 */
-    height: auto; /* 高さを自動調整し、アスペクト比を維持 */
-    transition: all 0.5s; /* すべてのプロパティの変化に0.5秒のトランジションを適用 */
+    width: 160px;
+    height: auto;
+    transition: all 0.5s;
 }
 
 a:hover img {
-    transform: scale(1.25); /* ホバー時にアイコンを1.25倍に拡大 */
+    transform: scale(1.20);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
 }
